@@ -20,7 +20,12 @@ double total_cost;
 // cout<<((double)tip_percent/100)*meal_cost <<endl;
 total_cost=((double)tip_percent/100)*meal_cost +((double)tax_percent/100)*meal_cost;
 // cout.precision(0);
-cout<<round(total_cost+meal_cost);
+cout<<round(total_cost+meal_cost)<<endl;
+// To get fractional part
+// double x=total_cost+meal_cost;
+// x=x-floor(x);
+// cout<<x<<endl;
+
 }
 
 int main()
