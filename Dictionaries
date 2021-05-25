@@ -1,0 +1,37 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include<map>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n;
+    string name;
+    string query;
+    long num;
+    cin>>n;
+    map <string,int> Book;
+    while(n--)
+    {
+        cin>>name;
+        cin>>num;
+        Book[name]=num;
+    }
+    while(cin>>query)
+    {
+        if(Book.find(query)!=Book.end())
+            cout<<query<<"="<<Book[query]<<endl;
+        else {
+            cout<<"Not found"<<endl;
+        }  
+    }
+    
+    return 0;
+}
+ 
+  
+
